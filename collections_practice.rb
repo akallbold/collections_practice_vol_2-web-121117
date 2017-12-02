@@ -59,7 +59,7 @@ def merge_data(arr1,arr2)
         details_hash.each do |key,value|
           # binding.pry
           # if name.include?(arr1_name_hash[i])
-          output[i][key] = value
+          output[i] << [key] = value
         # end
         end
       end
