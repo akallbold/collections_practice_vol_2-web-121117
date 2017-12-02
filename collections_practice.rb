@@ -48,13 +48,13 @@ def count_elements(array)
   output
 end
 
-def merge_data(keys, data)
-  hash_array = [];
-
-  keys.each do |name|
-    first_name = [:first]
-
-end
+# def merge_data(keys, data)
+#   hash_array = [];
+# 
+#   keys.each do |name|
+#     first_name = [:first]
+# 
+# end
 
 def merge_data(arr1, arr2)
   output=[]
