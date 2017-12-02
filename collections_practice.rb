@@ -54,7 +54,10 @@ def merge_data(keys, data)
   keys.each do |name|
     first_name = name[:first_name]
     data.each do |person|
+
       if person == first_name
+        first_name_data= person[first_name]
+        first_name_data[:first_name] = first_name
     end
   end
 
@@ -62,11 +65,11 @@ end
 
 # def merge_data(arr1, arr2)
 #   output=[]
-# 
+#
 #   arr1.each_with_index do |arr1_name_hash,i|
 #     output[i] = arr1_name_hash
 #   end
-# 
+#
 #   arr2.each_with_index do |arr2_name_hash,j|
 #     arr2_name_hash.each do |name,details_hash|
 #       details_hash.each do |key,value|
