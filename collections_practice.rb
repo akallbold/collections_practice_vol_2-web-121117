@@ -54,11 +54,11 @@ def merge_data(keys, data)
   keys.each do |name|
     first_name = name[:first_name]
     data.each do |person|
-
-      if person == first_name
+binding.pry
+      if person == first
         first_name_data = person[first_name]
         first_name_data[:first_name] = first_name
-        binding.pry
+        
       end
 
     end
