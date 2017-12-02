@@ -56,7 +56,8 @@ def merge_data(arr1,arr2)
     output[i] = arr1_name_hash
     arr2.each_with_index do |arr2_name_hash,j|
       arr2_name_hash.each do |name,details_hash|
-        output << details_hash
+        details_hash.each do |key,value|
+        output[i] << [key]value
       end
     end
   end
