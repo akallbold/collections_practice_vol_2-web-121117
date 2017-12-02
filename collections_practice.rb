@@ -69,6 +69,7 @@ def merge_data(arr1, arr2)
         binding.pry
         if output[0][:first_name]==name
         output[j][key] = value
+        end
       end
     end
   end
