@@ -62,7 +62,7 @@ def merge_data(arr1,arr2)
           if output[i]
           output[i][key] += value
         else
-          output[i][key]=''
+          output[i][key] = value
         end
           # output[0][awesomeness] = nil
         # end
