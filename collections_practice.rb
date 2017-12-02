@@ -60,7 +60,7 @@ def merge_data(arr1,arr2)
           # binding.pry
           # if name.include?(arr1_name_hash[i])
           output[i][key] = value
-        end
+        # end
         end
       end
     end
