@@ -58,7 +58,7 @@ def merge_data(arr1,arr2)
       arr2_name_hash.each do |name,details_hash|
         details_hash.each do |key,value|
           binding.pry
-          # output[i][arr1_name_hash]key => value
+          output[i][key] = value
         end
       end
     end
