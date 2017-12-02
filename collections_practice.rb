@@ -68,6 +68,7 @@ def merge_data(arr1, arr2)
       details_hash.each do |key,value|
         output[j][key] = value
       end
+      end
     end
   end
   output
