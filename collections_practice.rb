@@ -48,10 +48,10 @@ def count_elements(array)
   output
 end
 
-def merge_data(arr1,arr2)
-  output=[]
+def merge_data(keys, values)
+  output=[hash0, hash1]
 
-  arr1.each_with_index do |arr1_name_hash,i|
+  keys.each_with_index do |arr1_name_hash,i|
     # binding.pry
     output[i] = arr1_name_hash
     arr2.each_with_index do |arr2_name_hash,j|
@@ -59,11 +59,11 @@ def merge_data(arr1,arr2)
         details_hash.each do |key,value|
           # binding.pry
           # if name.include?(arr1_name_hash[i])
-          if output[i][key] == nil
+          # if output[i][key] == nil
             output[i][key] = value
-          else
-            output[i][key] += value
-          end
+          # else
+          #   output[i][key] += value
+          # end
           # # output[0][awesomeness] = nil
         # end
         end
