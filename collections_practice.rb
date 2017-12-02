@@ -58,7 +58,7 @@ def merge_data(keys, data)
       # if person == first_name
         first_name_data = person[first_name]
         first_name_data[:first_name] = first_name
-        hash_array << person
+        hash_array << person[first_name]
     end
   end
 hash_array
