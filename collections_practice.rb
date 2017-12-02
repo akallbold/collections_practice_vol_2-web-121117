@@ -50,10 +50,10 @@ end
 
 # def merge_data(keys, data)
 #   hash_array = [];
-# 
+#
 #   keys.each do |name|
 #     first_name = [:first]
-# 
+#
 # end
 
 def merge_data(arr1, arr2)
@@ -63,14 +63,14 @@ def merge_data(arr1, arr2)
     output[i] = arr1_name_hash
   end
 
-  # arr2.each_with_index do |arr2_name_hash,j|
-  #   arr2_name_hash.each do |name,details_hash|
-  #     details_hash.each do |key,value|
-  #       output[j][key] = value
-  #
-  #     end
-  #   end
-  # end
+  arr2.each_with_index do |arr2_name_hash,j|
+    arr2_name_hash.each do |name,details_hash|
+      details_hash.each do |key,value|
+        output[j][key] = value
+
+      end
+    end
+  end
   output
 end
 end
