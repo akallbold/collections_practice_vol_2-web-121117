@@ -62,29 +62,6 @@ def merge_data(keys, data)
   hash_array
 end
 
-# def merge_data(arr1, arr2)
-#   output=[]
-#
-#   arr1.each_with_index do |arr1_name_hash,i|
-#     output[i] = arr1_name_hash
-#   end
-#
-#   arr2.each_with_index do |arr2_name_hash,j|
-#     arr2_name_hash.each do |name,details_hash|
-#       details_hash.each do |key,value|
-#         binding.pry
-#         if output[j][:first_name] == name
-#         output[j][key] = value
-#         end
-#       end
-#     end
-#   end
-#   output
-# end
-
-
-
-
 def find_cool(array)
   output=[]
   array.each_with_index do |key,i|
