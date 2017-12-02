@@ -61,6 +61,7 @@ def merge_data(arr1,arr2)
           if name = arr1_name_hash[i]
           output[j][key] = value
         end
+        end
       end
     end
   end
