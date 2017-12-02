@@ -55,26 +55,18 @@ def merge_data(keys, data)
     first_name = [:first]
 
 end
+
 def merge_data(arr1, arr2)
   output=[]
 
   arr1.each_with_index do |arr1_name_hash,i|
-    # binding.pry
     output[i] = arr1_name_hash
   end
-    arr2.each_with_index do |arr2_name_hash,j|
-      arr2_name_hash.each do |name,details_hash|
-        details_hash.each do |key,value|
-          # binding.pry
-          # if name.include?(arr1_name_hash[i])
-          # if output[i][key] == nil
-            output[j][key] = value
-          # else
-          #   output[i][key] += value
-          # end
-          # # output[0][awesomeness] = nil
-        # end
-        end
+
+  arr2.each_with_index do |arr2_name_hash,j|
+    arr2_name_hash.each do |name,details_hash|
+      details_hash.each do |key,value|
+        output[j][key] = value
       end
     end
   end
