@@ -53,15 +53,12 @@ def merge_data(arr1,arr2)
 
   arr1.each_with_index do |arr1_name_hash,i|
     # binding.pry
-  output[i] = arr1_name_hash
-    # arr1_name_hash.each do |arr1_name_symbol, arr1_name|
-    #   while counter<arr1.size
-    #     binding.pry
-    #
-    #
-    #     counter+=1
-    #   end
-    # end
+    output[i] = arr1_name_hash
+    arr2.each_with_index do |arr2_name_hash,j|
+      arr2_name_hash.each do |name,details_hash|
+        output[j] << details_hash
+      end
+    end
   end
   output
 end
