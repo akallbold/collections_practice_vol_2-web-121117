@@ -49,7 +49,7 @@ def count_elements(array)
 end
 
 def merge_data(arr1, arr2)
-  output=[hash0, hash1]
+  output=[]
 
   arr1.each_with_index do |arr1_name_hash,i|
     # binding.pry
