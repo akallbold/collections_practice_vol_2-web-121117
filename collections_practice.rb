@@ -58,6 +58,7 @@ def merge_data(keys, data)
       if person == first_name
         first_name_data = person[first_name]
         first_name_data[:first_name] = first_name
+        binding.pry
       end
       
     end
