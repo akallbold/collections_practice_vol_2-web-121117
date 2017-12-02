@@ -56,9 +56,10 @@ def merge_data(keys, data)
     data.each do |person|
 
       if person == first_name
-        first_name_data= person[first_name]
+        first_name_data = person[first_name]
         first_name_data[:first_name] = first_name
       end
+      
     end
   end
 
