@@ -54,14 +54,12 @@ def merge_data(keys, data)
   keys.each do |name|
     first_name = name[:first_name]
     data.each do |person|
-      # binding.pry
-      # if person == first_name
-        first_name_data = person[first_name]
-        first_name_data[:first_name] = first_name
-        hash_array << person[first_name]
+      first_name_data = person[first_name]
+      first_name_data[:first_name] = first_name
+      hash_array << person[first_name]
     end
   end
-hash_array
+  hash_array
 end
 
 # def merge_data(arr1, arr2)
